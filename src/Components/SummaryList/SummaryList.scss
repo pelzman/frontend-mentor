@@ -1,0 +1,9 @@
+@import "../Color/color.scss";
+.summaryList {
+  margin: 30px;
+  .heading {
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: $Dark_gray_blue;
+  }
+}

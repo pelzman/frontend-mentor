@@ -1,0 +1,53 @@
+@import "./Components/Color/color.scss";
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $White;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.App {
+  padding-bottom: 30px;
+}
+.btn {
+  width: 95%;
+  height: 100px;
+  margin: 0 10px 40px 10px;
+  border-radius: 50px;
+  font-size: 2rem;
+  color: $White;
+  background-color: $Dark_gray_blue;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+@media (max-width: 1440px) and (min-width: 996px) {
+  .App {
+    width: 50%;
+    margin: 200px auto;
+    width: 1000px;
+    height: 900px;
+
+    .container {
+      box-shadow: 10px 10px 5px 12px $Pale_blue;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      padding-top: 0px;
+      padding-left: 0px;
+      padding-bottom: 0px;
+      border-radius: 20px;
+    }
+  }
+  .btn {
+    width: 95%;
+    height: 80px;
+    margin: 0 10px 40px 10px;
+    border-radius: 50px;
+    &:focus {
+      background-color: $Cobalt_blue;
+    }
+  }
+}
